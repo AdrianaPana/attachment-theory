@@ -111,33 +111,15 @@
       <a href="https://en.wikipedia.org/wiki/Attachment_theory" target="_blank">
         <strong>Learn more on Wikipedia</strong>
       </a>
-      <button class="collectData">
-        Find out what your attachment style is 🤔
-      </button>
+      <a
+        href="https://www.psychologytoday.com/us/tests/relationships/relationship-attachment-style-test"
+      >
+        <button class="collectData">
+          Find out what your attachment style is 🤔
+        </button>
+      </a>
       <hr />
       <p class="footer">This page was built by <span>Adriana Pana</span></p>
     </div>
-    <script>
-      function getData() {
-        let name = prompt("What is your name?");
-        let email = prompt("What is your email address?");
-
-        if (name.length > 0 && email.length > 0) {
-          alert(
-            "Thank you, " +
-              name +
-              "! " +
-              "You will receive a link to take the quizz, at " +
-              email +
-              "! 👍"
-          );
-        } else {
-          alert("Please click the green button again and enter valid data");
-        }
-      }
-
-      let findOutButton = document.querySelector(".collectData");
-      findOutButton.addEventListener("click", getData);
-    </script>
   </body>
 </html>
