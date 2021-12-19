@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attachment Styles</title>
+    <style>
+      h1 {
+        text-align: center;
+        text-shadow: 3px 3px 10px #62074e;
+        font-size: 50px;
+        font-weight: 800;
+        color: #27e1ce;
+        padding: 15px 20px;
+      }
+
+      h2 {
+        font-size: 30px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        text-align: center;
+        color: #efffb7;
+        border: 1px groove #efffb7;
+        border-radius: 4px;
+        padding: 15px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        color: white;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+        font-size: 22px;
+        line-height: 1.5;
+      }
+
+      a {
+        color: #27e1ce;
+        font-size: 18px;
+        text-decoration: none;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        color: #72407a;
+        background-color: #27e1ce;
+        font-size: 22px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      span {
+        font-style: oblique;
+      }
+
+      .container {
+        background: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+        width: 50%;
+        margin: 30px auto;
+        padding: 30px;
+        border-radius: 10px;
+      }
+
+      .green {
+        color: #27e1ce;
+      }
+
+      .footer {
+        text-align: center;
+        color: #efffb7;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>ATTACHMENT THEORY</h1>
+      <h2>Relationship attachment styles</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/010/949/original/attachment-style.jpeg?1623977954"
+        alt="Attachment styles"
+      />
+      <p>
+        Four styles of attachment have been identified in adults: secure,
+        anxious-preoccupied, dismissive-avoidant and fearful-avoidant.<br />
+        <em>Securely attached</em> adults have been linked to a high need for
+        achievement and a low fear of failure.<br />
+        <em>Anxious-preoccupied</em> adults seek high levels of intimacy,
+        approval and responsiveness from partners, becoming overly dependent.<br />
+        <em>Dismissive-avoidant</em> adults desire a high level of independence,
+        often appearing to avoid attachment altogether.<br />
+        <em>Fearful-avoidant</em> adults have mixed feelings about close
+        relationships, both desiring and feeling uncomfortable with emotional
+        closeness.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Attachment_theory" target="_blank">
+        <strong>Learn more on Wikipedia</strong>
+      </a>
+      <button class="collectData">
+        Find out what your attachment style is 🤔
+      </button>
+      <hr />
+      <p class="footer">This page was built by <span>Adriana Pana</span></p>
+    </div>
+    <script>
+      function getData() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        if (name.length > 0 && email.length > 0) {
+          alert(
+            "Thank you, " +
+              name +
+              "! " +
+              "You will receive a link to take the quizz, at " +
+              email +
+              "! 👍"
+          );
+        } else {
+          alert("Please click the green button again and enter valid data");
+        }
+      }
+
+      let findOutButton = document.querySelector(".collectData");
+      findOutButton.addEventListener("click", getData);
+    </script>
+  </body>
+</html>
